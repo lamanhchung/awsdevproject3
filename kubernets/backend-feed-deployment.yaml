@@ -16,12 +16,14 @@ spec:
     spec:
       containers:
       - name: backend-feed
-        image: chunglm/udagram-api-feed:v1
+        image: chunglm/udagram-api-feed:v2
         envFrom:
           - configMapRef:
               name: env-config
           - secretRef:
               name: env-secret
+          - secretRef:
+              name: aws-secret
         ports:
         - containerPort: 8080
         imagePullPolicy: IfNotPresent
