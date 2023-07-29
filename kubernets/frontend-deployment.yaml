@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: chunglm/udagram-frontend:v2
+        image: chunglm/udagram-frontend:v3
         ports:
         - containerPort: 80
         imagePullPolicy: IfNotPresent
