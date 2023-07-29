@@ -21,7 +21,7 @@ spec:
           - configMapRef:
               name: env-config
           - secretRef:
-            name: env-secret
+              name: env-secret
         ports:
         - containerPort: 8080
         imagePullPolicy: IfNotPresent
