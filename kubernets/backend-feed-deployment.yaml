@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend-feed
-        image: chunglm/udagram-api-feed:v2
+        image: chunglm/udagram-api-feed:v3
         envFrom:
           - configMapRef:
               name: env-config
